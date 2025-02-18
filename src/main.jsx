@@ -19,6 +19,9 @@ const Search = lazy(() => import('./component_search/Search.jsx'));
 // import TabForm from './components_tabForm/TabForm.jsx';
 const TabForm = lazy(() => import('./components_tabForm/TabForm.jsx'));
 
+// import AutoComSearch from './components_search_complete/Search.jsx';
+const AutoComSearch = lazy(() => import('./components_search_complete/Search.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -57,6 +60,12 @@ const router = createBrowserRouter([
         path: '/tabform',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <TabForm />
+        </Suspense>)
+      },
+      {
+        path: '/auto-com-search',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <AutoComSearch />
         </Suspense>)
       }
     ]

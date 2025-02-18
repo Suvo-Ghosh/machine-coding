@@ -9,6 +9,7 @@ function Navbar() {
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/search'>Search</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/form'>FormValidation</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/tabform'>TabForm</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/auto-com-search'>Search Complete</NavLink>
         </div>
     )
 }
