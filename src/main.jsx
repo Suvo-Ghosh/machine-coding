@@ -22,6 +22,8 @@ const TabForm = lazy(() => import('./components_tabForm/TabForm.jsx'));
 // import AutoComSearch from './components_search_complete/Search.jsx';
 const AutoComSearch = lazy(() => import('./components_search_complete/Search.jsx'));
 
+const FileExplorer = lazy(() => import('./components_file_explorer/FileExplorer.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -66,6 +68,12 @@ const router = createBrowserRouter([
         path: '/auto-com-search',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <AutoComSearch />
+        </Suspense>)
+      },
+      {
+        path: '/file-explorer',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <FileExplorer />
         </Suspense>)
       }
     ]
