@@ -26,6 +26,9 @@ const FileExplorer = lazy(() => import('./components_file_explorer/FileExplorer.
 
 const Pagination = lazy(() => import('./component_pagination/Pagination.jsx'));
 
+// import ProgressBar from './components_ProgressBar/ProgressBar.jsx';
+const ProgressBar = lazy(() => import('./components_ProgressBar/ProgressBar.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -82,6 +85,12 @@ const router = createBrowserRouter([
         path: '/pagination',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <Pagination />
+        </Suspense>)
+      },
+      {
+        path: '/progress-bar',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <ProgressBar />
         </Suspense>)
       }
     ]

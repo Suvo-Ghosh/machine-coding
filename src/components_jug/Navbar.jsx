@@ -12,6 +12,7 @@ function Navbar() {
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/auto-com-search'>Search Complete</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/file-explorer'>FileExplorer</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/pagination'>Pagination</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/progress-bar'>ProgressBar</NavLink>
         </div>
     )
 }
