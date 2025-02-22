@@ -9,10 +9,11 @@ function Navbar() {
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/search'>Search</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/form'>FormValidation</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/tabform'>TabForm</NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/auto-com-search'>Search Complete</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/auto-com-search'>SearchCompletion</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/file-explorer'>FileExplorer</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/pagination'>Pagination</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/progress-bar'>ProgressBar</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/faq'>FAQ</NavLink>
         </div>
     )
 }

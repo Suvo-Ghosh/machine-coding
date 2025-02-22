@@ -22,12 +22,17 @@ const TabForm = lazy(() => import('./components_tabForm/TabForm.jsx'));
 // import AutoComSearch from './components_search_complete/Search.jsx';
 const AutoComSearch = lazy(() => import('./components_search_complete/Search.jsx'));
 
+// import FileExplorer from './components_file_explorer/FileExplorer.jsx';
 const FileExplorer = lazy(() => import('./components_file_explorer/FileExplorer.jsx'));
 
+// import Pagination from './component_pagination/Pagination.jsx';
 const Pagination = lazy(() => import('./component_pagination/Pagination.jsx'));
 
 // import ProgressBar from './components_ProgressBar/ProgressBar.jsx';
 const ProgressBar = lazy(() => import('./components_ProgressBar/ProgressBar.jsx'));
+
+// import FaqContainer from './component_FAQ/FaqContainer.jsx';
+import FaqContainer from './component_FAQ/FaqContainer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -91,6 +96,12 @@ const router = createBrowserRouter([
         path: '/progress-bar',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <ProgressBar />
+        </Suspense>)
+      },
+      {
+        path: '/faq',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <FaqContainer />
         </Suspense>)
       }
     ]
