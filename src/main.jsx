@@ -24,6 +24,8 @@ const AutoComSearch = lazy(() => import('./components_search_complete/Search.jsx
 
 const FileExplorer = lazy(() => import('./components_file_explorer/FileExplorer.jsx'));
 
+const Pagination = lazy(() => import('./component_pagination/Pagination.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -74,6 +76,12 @@ const router = createBrowserRouter([
         path: '/file-explorer',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <FileExplorer />
+        </Suspense>)
+      },
+      {
+        path: '/pagination',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <Pagination />
         </Suspense>)
       }
     ]
