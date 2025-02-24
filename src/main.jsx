@@ -34,6 +34,9 @@ const ProgressBar = lazy(() => import('./components_ProgressBar/ProgressBar.jsx'
 // import FaqContainer from './component_FAQ/FaqContainer.jsx';
 import FaqContainer from './component_FAQ/FaqContainer.jsx';
 
+// import Timer from './component_timer/Timer.jsx';
+const Timer = lazy(() => import('./component_timer/Timer.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -102,6 +105,12 @@ const router = createBrowserRouter([
         path: '/faq',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <FaqContainer />
+        </Suspense>)
+      },
+      {
+        path: '/timer',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <Timer />
         </Suspense>)
       }
     ]

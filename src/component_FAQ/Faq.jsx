@@ -9,7 +9,10 @@ function Faq({ item }) {
                     {clicked ? "▼" : "►"}
                     {item.question}
                 </h1>
-                {clicked && <p className="ml-6 ">{item.answer}</p>}
+                <p className={`ml-6 overflow-hidden transition-all duration-400 ease-in-out ${clicked ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                    {item.answer}
+                </p>
             </div>
         </>
     );
