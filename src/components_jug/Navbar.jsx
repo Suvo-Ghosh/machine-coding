@@ -15,6 +15,7 @@ function Navbar() {
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/progress-bar'>ProgressBar</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/faq'>FAQ</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/timer'>Timer</NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'text-black' : undefined} to='/otp'>OTP</NavLink>
         </div>
     )
 }

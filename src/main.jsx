@@ -37,6 +37,9 @@ import FaqContainer from './component_FAQ/FaqContainer.jsx';
 // import Timer from './component_timer/Timer.jsx';
 const Timer = lazy(() => import('./component_timer/Timer.jsx'));
 
+// import OTP from './component_OTP/OTP.jsx';
+const OTP = lazy(() => import('./component_OTP/OTP.jsx'));
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -111,6 +114,12 @@ const router = createBrowserRouter([
         path: '/timer',
         element: (<Suspense fallback={<div>Loading...</div>}>
           <Timer />
+        </Suspense>)
+      },
+      {
+        path: '/otp',
+        element: (<Suspense fallback={<div>Loading...</div>}>
+          <OTP />
         </Suspense>)
       }
     ]
