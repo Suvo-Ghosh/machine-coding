@@ -19,7 +19,6 @@ function OTP() {
     }
 
     const handelOnKeyDown = (e, index) => {
-        console.log(e.key);
         if (!e.target.value && e.key === "Backspace") {
             refArr.current[index - 1]?.focus();
         }
