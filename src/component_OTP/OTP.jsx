@@ -26,10 +26,10 @@ function OTP() {
 
 
     return (
-        <>
-            <div>OTP Input</div>
+        <div className="text-center">
+            <div className='text-4xl mt-40 mb-5'>OTP Validation</div>
             {inputArr.map((input, index) => {
-                return <input className='otp-input border-2 outline-red-700 border-black w-10 m-2 h-10 text-[25px] text-center'
+                return <input className='otp-input border-2 outline-red-700 border-black w-16 m-2 h-16 text-[35px] text-center'
                     key={index} type="text"
                     ref={(input) => (refArr.current[index] = input)}
                     onChange={(e) => handleChange(e.target.value, index)}
@@ -39,7 +39,7 @@ function OTP() {
             {/* {Array.from({ length: OTP_DIGITS }, () => {
                 return <div className="">Hii</div>
             })} */}
-        </>
+        </div>
     )
 }
 
